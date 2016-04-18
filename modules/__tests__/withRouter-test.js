@@ -10,7 +10,7 @@ import resetHash from './resetHash'
 describe('withRouter', function () {
   class App extends Component {
     render() {
-      expect(this.context.router).toExist()
+      expect(this.props.router).toExist()
       return <h1>App</h1>
     }
   }
